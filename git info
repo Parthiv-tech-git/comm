@@ -1,0 +1,23 @@
+git and github are the differnt .
+git is version control ,when we install git in folder it will mointor ever modification in the folder.
+ git commands 
+ git version -v ,to check the version and wheather it has install or not .
+after installization of git then we have to set the your name and emailby using of this commands 
+git config --global user.name  "xwd"
+git config --global user.email  "xwd"
+ successfully you had registered
+
+ git init ,use to active the mointor
+ git add filename.js OR git add . for all files
+ git commit -m "message"
+ git branch , to check which was have .
+ git checkout name of branch , creating the new branch and move to that branch
+ git branch -M brachname ,to make main of it.
+git remote add origin https://gub.com/Parthiv-tech-git/command.git,in place of origin we can write anything .
+git push -u origin branchName. pushing to github
+
+
+GITHUB --
+github is a storing place of our projects.
+through this github our can also clone the our project and make changes and rasie the pull request.
+git pull ,which is used for the pull lastest code from the git hub. 
