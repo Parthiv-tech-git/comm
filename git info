@@ -14,10 +14,16 @@ git config --global user.email  "xwd"
  git checkout name of branch , creating the new branch and move to that branch
  git branch -M brachname ,to make main of it.
 git remote add origin https://gub.com/Parthiv-tech-git/command.git,in place of origin we can write anything .
-git push -u origin branchName. pushing to github
+git push -u origin branchName. pushing to github.
+ 
+ git push --set-upstream origin newbranch, all file copy from main to newly create branch .
 
 
 GITHUB --
 github is a storing place of our projects.
 through this github our can also clone the our project and make changes and rasie the pull request.
-git pull ,which is used for the pull lastest code from the git hub. 
+git pull ,which is used for the pull lastest code from the git hub. which are  megred in git hub .
+
+LOCAL AND GITHUB
+local branches which are created on your local system , it doesnot appers to other system untill the you push in git hu.
+b
