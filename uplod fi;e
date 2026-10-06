@@ -98,3 +98,62 @@ Become the person who can take:
 an idea → a beautiful design → clean responsive code → a polished real product
 
 That's a much more valuable skill.
+
+
+
+
+
+
+
+this is about of lifting data
+import { useState } from "react";
+import Child1 from "./Child1";
+import Child2 from "./Child2";
+
+function Parent() {
+  const [message, setMessage] = useState("");
+
+  return (
+    <div>
+      <h1>Parent</h1>
+
+      <Child1 sendData={setMessage} />
+
+      <Child2 data={message} />
+    </div>
+  );
+}
+
+export default Parent;
+
+Here the parent owns the state:
+
+const [message, setMessage] = useState("");
+
+And passes:
+
+setMessage → Child 1
+
+message → Child 2
+
+2. Child 1
+Child 1 receives the parent's function.
+
+function Child1({ sendData }) {
+
+  const handleClick = () => {
+    sendData("Hello from Child 1");
+  };
+
+  return (
+    <div>
+      <h2>Child 1</h2>
+
+      <button onClick={handleClick}>
+        Send Data
+      </button>
+    </div>
+  );
+}
+
+export default Child1;
